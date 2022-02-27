@@ -1,0 +1,17 @@
+mod1 + b
+	firefox
+
+mod1 + f
+	thunar
+
+mod1 + g
+	galculator
+
+mod1 + u
+	maim --select | xclip -selection clipboard -t image/png
+
+mod1 + v 
+	pavucontrol
+
+XF86MonBrightness{Down,Up}
+	brightnessctl set 10%{-,+}
