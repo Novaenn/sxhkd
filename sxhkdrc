@@ -7,6 +7,9 @@ super + f
 super + g
 	galculator
 
+super + l
+	light-locker-command -l
+
 super + v 
 	pavucontrol
 
@@ -15,3 +18,9 @@ mod1 + u
 
 XF86MonBrightness{Down,Up}
 	brightnessctl set 10%{-,+}
+
+XF86Audio{Lower,Raise}Volume
+	pactl set-sink-volume @DEFAULT_SINK@ {-,+}5%
+
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
