@@ -13,8 +13,17 @@ super + l
 super + v 
 	pavucontrol
 
+super + h
+	evince ~/Documents/Scripts/keybinds/keybinds.pdf
+
 mod1 + u
 	maim --select | xclip -selection clipboard -t image/png
+
+control + End
+	poweroff
+
+Print
+	maim -s | tee ~/Pictures/Screenshot_$(date +%s).png
 
 XF86MonBrightness{Down,Up}
 	brightnessctl set 10%{-,+}
@@ -24,3 +33,6 @@ XF86Audio{Lower,Raise}Volume
 
 XF86AudioMute
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+XF86TouchpadToggle
+	toggle-touchpad
